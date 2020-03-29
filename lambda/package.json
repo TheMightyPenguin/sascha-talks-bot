@@ -1,0 +1,21 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc src/*.ts",
+    "init": "tsc --init"
+  },
+  "keywords": [],
+  "author": "Victor Tortolero",
+  "license": "ISC",
+  "dependencies": {
+    "aws-cdk": "^1.31.0",
+    "telegraf": "^3.36.0",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.46"
+  }
+}
