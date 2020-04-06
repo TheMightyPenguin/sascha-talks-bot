@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "aws-cdk": "^1.31.0",
+    "aws-sdk": "^2.648.0",
     "telegraf": "^3.36.0",
     "typescript": "^3.8.3"
   },
