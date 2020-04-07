@@ -6,7 +6,7 @@ const polly = new Polly();
 
 const handler: APIGatewayProxyHandler = async (event, _context) => {
   const body = JSON.parse(event.body ?? "{}");
-  const bot = new Telegraf("1000759519:AAHNFBgEdWG1oQ5Kemnh1QjZ8G29DyHM6Gk");
+  const bot = new Telegraf(process.env.telegramToken as string);
 
   console.log("got body", JSON.stringify(body, null, 2));
 
