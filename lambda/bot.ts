@@ -8,8 +8,6 @@ const handler: APIGatewayProxyHandler = async (event, _context) => {
   const body = JSON.parse(event.body ?? "{}");
   const bot = new Telegraf(process.env.telegramToken as string);
 
-  console.log("got body", JSON.stringify(body, null, 2));
-
   console.log(`EVENT: Synthetize "${body.message.text}"`);
   const speech = await polly
     .synthesizeSpeech({
