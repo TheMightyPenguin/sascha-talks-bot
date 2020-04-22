@@ -13,7 +13,7 @@ export class SaschaTalksBotStack extends cdk.Stack {
       "SaschaTelegramToken",
       {
         secretArn:
-          "arn:aws:secretsmanager:us-west-2:817483674872:secret:SaschaTelegramToken-1QsYuX",
+          "arn:aws:secretsmanager:us-west-2:127814736801:secret:SaschaTelegramBotTokens-oMQNMQ",
       }
     );
 
