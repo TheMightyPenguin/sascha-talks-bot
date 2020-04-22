@@ -31,7 +31,17 @@ const handler: APIGatewayProxyHandler = async (event, _context) => {
   });
 
   console.log("EVENT: start handle");
-  await bot.handleUpdate(body);
+  try {
+    await bot.handleUpdate(body);
+  } catch (e) {
+    console.log("ERROR: Error handling message, check bot token maybe?");
+    return {
+      statusCode: 500,
+      body: JSON.stringify({
+        message: "Error handling message, check bot token maybe?",
+      }),
+    };
+  }
   console.log("EVENT: end handle");
 
   return {
